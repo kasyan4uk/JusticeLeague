@@ -1,0 +1,44 @@
+a {
+    text-decoration-line: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+
+.container {
+    min-width: 360px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
