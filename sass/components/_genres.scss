@@ -1,0 +1,89 @@
+.genres {
+    padding-top: 70px;
+}
+
+.genres-list {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 15px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 160px;
+        height: 120px;
+
+        border-radius: 20px;
+        
+        &:nth-child(1) {
+            background: linear-gradient(109deg, #FD093F 2.4%, #F383F1 100%);
+        }
+        &:nth-child(2) {
+            background: linear-gradient(114deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+        }
+        &:nth-child(3) {
+            background: linear-gradient(109deg, #B936FF 2.4%, #57DEDA 100%);
+        }
+        &:nth-child(4) {
+            background: linear-gradient(109deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+        }
+        &:nth-child(5) {
+            background: linear-gradient(109deg, #FF6472 2.4%, #FDA75D 100%);
+        }
+        &:nth-child(6) {
+            background: linear-gradient(110deg, #13547A 2.37%, #80D0C7 96.77%);
+        }
+        &:nth-child(7) {
+            background: linear-gradient(110deg, #FFF77B 2.37%, #FFBF42 50%);
+        }
+        &:nth-child(8) {
+            background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+        }
+
+
+        @media screen and (min-width: 768px) {
+            width: 330px;
+            height: 200px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & img {
+            margin-bottom: 13px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+
+    &__text {
+        
+        display: flex;
+        justify-content: center;
+
+
+        @media screen and (min-width: 768px) {
+            text-align: center;
+            font-family: Mulish;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+        }
+        
+    }
+}
+

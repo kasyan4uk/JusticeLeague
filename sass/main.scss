@@ -1,3 +1,21 @@
 @import "./base/base";
 
-@import "./components/header"
+@import "./utils/variables";
+
+@import "./components/header";
+
+@import "./components/hero";
+
+@import "./components/shows";
+
+@import "./components/movies";
+
+@import "./components/genres";
+
+@import "./components/actors";
+
+@import "./components/adventure";
+
+@import "./components/register";
+
+@import "./components/footer";

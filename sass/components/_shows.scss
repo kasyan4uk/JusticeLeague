@@ -1,0 +1,37 @@
+.shows {
+    padding-top: 60px;
+}
+
+
+.film-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+
+    @media screen and (min-width: 1440px) {
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        width: 156px;
+        height: auto;
+
+        @media screen and (min-width: 768px) {
+        width: 206px;
+        }
+    }
+
+    &__img {
+        border-radius: 20px;
+
+        &:hover,
+        &:focus {
+            box-shadow: var(--card-hover);
+
+        }
+    }
+}
+

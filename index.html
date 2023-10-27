@@ -3,33 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
     <header>
         <div class="container main-nav">
-            <a href="/">
+            <a class="logo" href="/">
                 <img class="logo-header" src="./images/logo/logo.png" alt="logo" loading="lazy">
+                <p class="logo-text">box</p>
             </a>
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigtion-item">
-                        <a class="navigation-link">Home</a>
+                    <li class="navigtion-list__item">
+                        <a class="navigation-list__link" href="#home">Home</a>
                     </li>
-                    <li class="navigtion-item">
-                        <a class="navigation-link">TV Shows</a>
+                    <li class="navigtion-list__item">
+                        <a class="navigation-list__link" href="#shows">TV Shows</a>
                     </li>
-                    <li class="navigtion-item">
-                        <a class="navigation-link">Movies</a>
+                    <li class="navigtion-list__item">
+                        <a class="navigation-list__link" href="#movies">Movies</a>
                     </li>
-                    <li class="navigtion-item">
-                        <a class="navigation-link">Series</a>
+                    <li class="navigtion-list__item">
+                        <a class="navigation-list__link" href="#movies">Series</a>
                     </li>
                 </ul>
             </nav>
-
+            <ul class="tools">
+                <li class="tools__item">
+                    <a href="#">
+                        <img src="./images/icons/search.svg" alt="search">
+                    </a>
+                </li>
+                <li class="tools__item">
+                    <a href="#">
+                        <img src="./images/icons/notification.svg" alt="notification">
+                    </a>
+                </li>
+                <li class="tools__item">
+                    <a href="#">
+                        <img src="./images/icons/register.svg" alt="register">
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
+    <main>
+        <section id="home">
+            <div class="container hero">
+                <h1 class="hero-title">Zack Snyder's Justice League</h1>
+                <ul class="film-info">
+                    <li class="film-info__item">2021</li>
+                    <li class="film-info__item radius">18+</li>
+                    <li class="film-info__item">4h 2min</li>
+                    <li class="film-info__item">
+                        8.8 <i class="film-info__icon">&#9733;</i>
+                    </li>
+                </ul>
+                <p class="film-description">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+                <div class="hero-buttons">
+                    <button class="button button-watch">
+                        <i class="button-watch__icon">&#9658;</i>Watch 
+                    </button>
+                    <button class="button button-info">More information</button>
+                </div>
+            </div>
+        </section>
+        <section id="shows">
+            <div class="container shows">
+                <h2 class="text">Trending TV Shows</h2>
+                <ul class="film-list">
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/1.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/2.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/3.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/4.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/5.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/shows/6.jpg" alt="TV Shows"></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container movies" id="movies">
+                <h2 class="text">Trending Movies</h2>
+                <ul class="film-list">
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/11.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/12.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/13.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/14.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/15.jpg" alt="TV Shows"></li>
+                    <li class="film-list__item"><img class="film-list__img" src="./images/movies/16.jpg" alt="TV Shows"></li>
+                </ul>
+                <div class="button-container">
+                    <button class="button button-more">See more</button>
+                </div>
+            </div>
+        </section>
+        <section class="genres">
+            <div class="container">
+                <h2 class="text">Popular Genres</h2>
+                <ul class="genres-list">
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/romance.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Romance</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/drama.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Drama</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/historical.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Historical</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/action.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Action</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/sci-fi.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Sci-fi</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/horror.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Horror</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/comedy.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Comedy</p>
+                        </div>
+                    </li>
+                    <li class="genres-list__item">
+                        <div class="genres-list__icon">
+                            <img src="./images/genres/documentary.svg" width="80" height="80"></img>
+                            <p class="genres-list__text">Documentary</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="actors">
+            <div class="container">
+                <h2 class="text">Popular Actors & Directors</h2>
+                <ul class="actor-list">
+                    <li class="actor-list__item">
+                        <img src="./images/actors/samantha.jpg" alt="Samantha">
+                        <h3 class="actor-list__text">Samantha Bowen</h3>
+                    </li>
+                    <li class="actor-list__item">
+                        <img src="./images/actors/rhys.jpg" alt="Rhys">
+                        <h3 class="actor-list__text">Rhys Birch</h3>
+                    </li>
+                    <li class="actor-list__item">
+                        <img src="./images/actors/james.jpg" alt="James">
+                        <h3 class="actor-list__text">James Holloway</h3>
+                    </li>
+                    <li class="actor-list__item">
+                        <img src="./images/actors/joshua.jpg" alt="Joshua">
+                        <h3 class="actor-list__text">Joshua Walton</h3>
+                    </li>
+                    <li class="actor-list__item">
+                        <img src="./images/actors/patrick.jpg" alt="Patrick">
+                        <h3 class="actor-list__text">Patrick Elliott</h3>
+                    </li>
+                    <li class="actor-list__item">
+                        <img src="./images/actors/morgan.jpg" alt="Morgan">
+                        <h3 class="actor-list__text">Morgan O'Neill</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="adventure">
+            <div class="container">
+                <ul class="adventure-list">
+                    <li class="adventure-list__item">
+                        <img class="bunny-img" src="./images/coming-soon/bunny.jpg" alt="bunny">
+                    </li>
+                    <li class="adventure-list__item">
+                        <div class="coming-soon">
+                            <img src="./images/coming-soon/2021.png" alt="2021">
+                            <p class="coming-soon__text">Coming Soon...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container register">
+                <div class="register-bunner">
+                    <p class="register-bunner__text" >Are You New Here ? Don’t wait, Register Now. </p>
+                    <button class="button register-bunner__button">Register Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+            <a class="logo logo--footer" href="/">
+                <img class="logo-header" src="./images/logo/logo.png" alt="logo" loading="lazy">
+                <p class="logo-text">box</p>
+            </a>
+            <ul class="footer-list">
+                <li class="footer-list__item"><a href="#">Voice over and Subtitle</a></li>
+                <li class="footer-list__item"><a href="#">Media Center </a></li>
+                <li class="footer-list__item"><a href="#">Privacy</a></li>
+                <li class="footer-list__item"><a href="#">Contact us</a></li>
+                <li class="footer-list__item"><a href="#">Voice Description</a></li>
+                <li class="footer-list__item"><a href="#">Investor Relations</a></li>
+                <li class="footer-list__item"><a href="#">Legal Provisions</a></li>
+                <li class="footer-list__item"><a href="#">Help Center</a></li>
+                <li class="footer-list__item"><a href="#">Job Opportunities</a></li>
+                <li class="footer-list__item"><a href="#">Cookies Preferences</a></li>
+                <li class="footer-list__item"><a href="#">Gift Cards</a></li>
+                <li class="footer-list__item"><a href="#">Terms of Use</a></li>
+                <li class="footer-list__item"><a href="#">Corporate Informations</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
